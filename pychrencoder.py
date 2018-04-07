@@ -71,7 +71,7 @@ def main():
     os.system('clear')
     print(banner())
     description = "Comments:\n\tDon't specify encoding type if you did not specify file path!\n\tEncoding levels:\n\t\t0 - only encode special characters\n\t\t1 - encode all character not only special characters\n\t\t2 - double encoding (encode the encoded input twice)\n"
-    parser = optparse.OptionParser(description+"Usage:\n\t-f Character list, format: A;%41;%41\n\t-i Specify your input \n\t-e URL character encoding type\n\t-l URL encoding level 0-2")
+    parser = optparse.OptionParser(description+"Usage:\n\t-f Character file, format: A;%41;%41\n\t-i Specify your input \n\t-e URL character encoding type\n\t-l URL encoding level 0-2")
     parser.add_option('-f', dest='fpath', type='string', help='Specify delimited character list (The file contains maximum 3 column e.g: A;%41;%41), optional arguement')
     parser.add_option('-e', dest='etype', type='string', help='Available characer encoding types by default win1252 and utf8')
     parser.add_option('-l', dest='elevel', type='string', help='Specify character URL encoding level 0 to 2')
